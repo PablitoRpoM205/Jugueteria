@@ -7,7 +7,7 @@ class Inventario:
 
     def mostrar_inventario(self):
         if not self.juguetes:
-            return "El inventario está vacío."
+            return "¡El inventario está vacío!"
         lista = ""
         for j in self.juguetes:
             lista += f"{j.get_nombre()} - Precio: {j.get_precio()} - Stock: {j.get_stock()}\n"

@@ -18,7 +18,7 @@ class Juguete:
         if cantidad > 0 and cantidad <= self._stock:
             self._stock -= cantidad
             return f"Se vendieron {cantidad} {self._nombre}(s)."
-        return "No hay suficiente stock."
+        return "No hay elementos en el stock."
     
     def aplicar_descuento(self, porcentaje):
         if 0 < porcentaje < 100:
