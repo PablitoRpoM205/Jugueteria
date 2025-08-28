@@ -24,4 +24,4 @@ class Juguete:
         if 0 < porcentaje < 100:
             self._precio -= self._precio * (porcentaje / 100)
             return f"Se aplicó el descuento. El precio nuevo es: {self._precio:.2f}"
-        return "Porcentaje inválido."
+        return "Porcentaje inválido. "

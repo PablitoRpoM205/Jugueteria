@@ -58,7 +58,7 @@ def menu():
 
 
         elif opcion == "4":
-            print("¡Gracias por utilizar nuestra aplicación!")
+            print("¡Gracias por utilizar nuestra aplicación!" )
             break
         else:
             print("Opción inválida.")
