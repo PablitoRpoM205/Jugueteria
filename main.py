@@ -3,7 +3,7 @@ from clases.didactico import Didactico
 from clases.coleccionable import Coleccionable
 from clases.inventario import Inventario
 
-def menu():
+def menu() -> None:
     inventario = Inventario()
     inventario.agregar_juguete(Electronico("Robot", 100000, 5))
     inventario.agregar_juguete(Didactico("Lego", 350000, 10))
@@ -19,17 +19,17 @@ def menu():
         print("3. Aplicar descuento")
         print("4. Salir")
 
-        opcion = input("Elige una opción: ")
+        opcion: str = input("Elige una opción: ")
 
         if opcion == "1":
             print(inventario.mostrar_inventario())
         elif opcion == "2":
-            nombre = input("Nombre del juguete: ")
-            entrada = input("Cantidad: ")
+            nombre: str = input("Nombre del juguete: ")
+            entrada: str = input("Cantidad: ")
             if not entrada.isdigit():
                 print("Debe ingresar un número válido.")
                 continue
-            cantidad = int(entrada)
+            cantidad: int = int(entrada)
 
             for j in inventario.juguetes:
                 if j.get_nombre().lower() == nombre.lower():
@@ -39,14 +39,14 @@ def menu():
                 print("Juguete no encontrado.")
 
         elif opcion == "3":
-            nombre = input("Nombre del juguete: ").strip()
-            entrada = input("Porcentaje de descuento: ")
+            nombre: str = input("Nombre del juguete: ").strip()
+            entrada: str = input("Porcentaje de descuento: ")
             if not entrada.isdigit():
                 print("Debe ingresar un número válido.")
                 continue
-            porcentaje = int(entrada)
+            porcentaje: int = int(entrada)
 
-            encontrado = False
+            encontrado: bool = False
             for j in inventario.juguetes:
                 if j.get_nombre().lower() == nombre.lower():
                     print(j.aplicar_descuento(porcentaje))
