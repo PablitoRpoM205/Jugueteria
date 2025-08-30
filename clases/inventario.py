@@ -1,11 +1,14 @@
-class Inventario:
-    def __init__(self):
-        self.juguetes = []
+from typing import List
+from clases.juguete import Juguete
 
-    def agregar_juguete(self, juguete):
+class Inventario:
+    def __init__(self) -> None:
+        self.juguetes: List[Juguete] = []
+
+    def agregar_juguete(self, juguete: Juguete) -> None:
         self.juguetes.append(juguete)
 
-    def mostrar_inventario(self):
+    def mostrar_inventario(self) -> str:
         if not self.juguetes:
             return "¡El inventario está vacío! "
         lista = ""
