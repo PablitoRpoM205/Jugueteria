@@ -1,10 +1,10 @@
-# 🧸 Sistema de Gestión de Juguetería
+# Sistema de Gestión de Juguetería
 Nuestro proyecto consiste en un Sistema de Gestión de Juguetería desarrollado en Python, una aplicación sencilla que utiliza Programación Orientada a Objetos para manejar diferentes tipos de juguetes con sus respectivas reglas de negocio.
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 Este proyecto implementa un sistema de inventario para una juguetería que permite gestionar tres tipos diferentes de juguetes:
-- **🤖 Juguetes Electrónicos**: Con descuento máximo del 20%.
-- **📚 Juguetes Didácticos**: Con descuento máximo del 15%.
-- **🎭 Juguetes Coleccionables**: Con descuento máximo del 4%
+- **Juguetes Electrónicos**: Con descuento máximo del 20%.
+- **Juguetes Didácticos**: Con descuento máximo del 15%.
+- **Juguetes Coleccionables**: Con descuento máximo del 4%
 Cada tipo de juguete tiene sus propias reglas de descuento y hereda funcionalidades básicas de la clase padre `Juguete`.
 ### Pasos para Ejecutar
 1. **Abre Visual Studio Code y clona el repositorio**:
@@ -24,7 +24,7 @@ Cada tipo de juguete tiene sus propias reglas de descuento y hereda funcionalida
    - Opción 3: Aplicar descuentos.
    - Opción 4: Salir del programa.
 
-## 📖 Uso del Sistema
+## Uso del Sistema
 
 ### Ejemplo de Uso
 
@@ -45,7 +45,7 @@ Goku - Precio: 97000 - Stock: 2
 ```
 
 
-## 🏗️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 jugueteria/
@@ -61,7 +61,7 @@ jugueteria/
 └── README.md               # Documentación de la aplicación
 ```
 
-## ✨ Características
+## Características
 
 ### Funcionalidades Principales
 
@@ -79,7 +79,7 @@ jugueteria/
 | Didáctico | 15% | Lego, Cubo de Rubik |
 | Coleccionable | 4% | Funko, Goku |
 
-## 🚀 Instalación y Ejecución
+## Instalación y Ejecución
 
 ### Requisitos
 
@@ -112,7 +112,7 @@ Se aplicó el descuento. El precio nuevo es: 315000.00
 - `vender(cantidad)`: Procesa la venta de juguetes.
 - `aplicar_descuento(porcentaje)`: Aplica descuentos con validaciones específicas.
 
-## 🔧 Características Técnicas
+## Características Técnicas
 
 - **Encapsulación**: Atributos privados con métodos getter.
 - **Herencia**: Clases especializadas que extienden la funcionalidad base.
@@ -120,7 +120,7 @@ Se aplicó el descuento. El precio nuevo es: 315000.00
 - **Validación de Datos**: Control de rangos y tipos de datos.
 - **Manejo de Errores**: Mensajes informativos para el usuario.
 
-## 👨‍💻 Autores
+## Autores
 - Julián Esteban Álvarez Segura
 - Juan Pablo Restrepo Muñoz
 
@@ -130,6 +130,6 @@ Período Académico: 2025-2
 
 Desarrollado como proyecto educativo para demostrar conceptos de Programación Orientada a Objetos en Python.
 
-⭐ ¡Si te ha gustado nuestro proyecto, no olvides darle una estrella en GitHub!
+¡Si te ha gustado nuestro proyecto, no olvides darle una estrella en GitHub!
 
 ¡Gracias!
